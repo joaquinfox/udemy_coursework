@@ -3,9 +3,12 @@ const mongoose = require('mongoose');
 const path = require('path');
 const PORT = process.env.PORT || 5000;
 
-let uri =
+let MONGODB_URI =
   'mongodb://heroku_z72c0pbl:pur17kt1j8ao0mo5n737q4loeo@ds261429.mlab.com:61429/heroku_z72c0pbl';
-mongoose.connect(uri, { userNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(MONGODB_URI, {
+  userNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 let userSchema = new mongoose.Schema({
   name: String,
