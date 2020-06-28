@@ -13,6 +13,15 @@ showTimes = () => {
   return result;
 };
 
+showTimes = () => {
+  let result = '';
+  const times = process.env.TIMES;
+  for ( i = 0; i < times; i++) {
+    result += i + ' ';
+  }
+  return result;
+};
+
 express()
   .use(express.static(path.join(__dirname, 'public')))
   .set('views', path.join(__dirname, 'views'))
