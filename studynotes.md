@@ -14,10 +14,13 @@
 * heroku addons:open addonname
 * heroku run bash (I think this isn't very useful since i have the IDE)
         - exit
+<<<<<<< HEAD
 
 MONGODB
 * heroku addons:create mongolab:sandbox
  * mongolab-opaque-75877
 * heroku addons:docs mongolab
 * heroku config:get MONGODB_URI
+=======
+>>>>>>> 4a6bf4cab7ce8cb1e6df6214587a782b9ad14aa5
 * 

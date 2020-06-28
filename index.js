@@ -1,12 +1,11 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
-const PORT = process.env.PORT || 5000;
-
+const PORT = process.env.PORT || 500
 let MONGODB_URI =
   'mongodb://heroku_z72c0pbl:pur17kt1j8ao0mo5n737q4loeo@ds261429.mlab.com:61429/heroku_z72c0pbl';
 mongoose.connect(MONGODB_URI, {
-  userNewUrlParser: true,
+  useNewUrlParser: true,
   useUnifiedTopology: true,
 });
 
